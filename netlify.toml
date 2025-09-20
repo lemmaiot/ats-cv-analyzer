@@ -1,0 +1,12 @@
+[build]
+	command = "npm run build"
+	publish = "dist"
+
+[context.production.environment]
+	# Example: make sure Netlify doesn't need to inject any build-time secrets here
+	# GEMINI_API_KEY = "${GEMINI_API_KEY}"
+
+[dev]
+	command = "npm run dev"
+	port = 5173
+
